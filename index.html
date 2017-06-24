@@ -5,6 +5,14 @@
 </head>
 <body>
 <a-scene>
+   <a-assets>
+        <a-mixin id="light" geometry="primitive: sphere; radius: 1.5"
+                 material="color: #FFF; shader: flat"
+                 light="color: black; distance: 120; intensity: 2; type: point">
+        </a-mixin>
+        <a-mixin id="torus-knot" geometry="primitive: torusKnot"
+                 material="color: red"></a-mixin>
+</a-assets>
 <a-box position="-1 0.5 -3" rotation="0 45 0" color="blue"></a-box>
   <a-sphere color="red" position="0 0.5 -3" rotation="10 20 10"></a-sphere>
   <a-sky color="green"></a-sky>
